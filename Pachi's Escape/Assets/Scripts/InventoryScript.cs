@@ -9,6 +9,7 @@ public class InventoryScript : MonoBehaviour {
     public Button inventoryButton;
     public GameObject fire;
     public GameObject batteriesInFire;
+    public GameObject hotSauceInFire;
     private bool inventoryShowing;
 
     private Image[] items;
@@ -23,6 +24,7 @@ public class InventoryScript : MonoBehaviour {
         inventoryShowing = false;
         fire.GetComponent<Renderer>().enabled = false;
         batteriesInFire.GetComponent<Renderer>().enabled = false;
+        hotSauceInFire.GetComponent<Renderer>().enabled = false;
         HideInventoryBox();
     }
 	
@@ -48,7 +50,7 @@ public class InventoryScript : MonoBehaviour {
         for (int i = 0; i < items.Length; i++)
         {
             if (globalVariables.inventory[i]){
-                items[i].enabled = true;
+                items[i].gameObject.SetActive(true);
             }
         }
     }
@@ -61,7 +63,8 @@ public class InventoryScript : MonoBehaviour {
         for (int i = 0; i < items.Length; i++)
         {
             //Debug.Log("hiding something");
-            items[i].enabled = false;
+            //items[i].enabled = false;
+            items[i].gameObject.SetActive(false);
         }
     }
 

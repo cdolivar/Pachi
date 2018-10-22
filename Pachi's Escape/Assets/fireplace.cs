@@ -5,6 +5,7 @@ using UnityEngine;
 public class fireplace : MonoBehaviour {
     public GameObject fire;
     public GameObject batteriesInFire;
+    public GameObject hotSauceInFire;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +28,11 @@ public class fireplace : MonoBehaviour {
             batteriesInFire.GetComponent<Renderer>().enabled = true;
             globalVariables.active = new bool[] { false, false, false, false, false, false };
             globalVariables.inventory[4] = false;
+        }
+        if (globalVariables.active[2]){
+            hotSauceInFire.GetComponent<Renderer>().enabled = true;
+            globalVariables.active = new bool[] { false, false, false, false, false, false };
+            globalVariables.inventory[2] = false;
         }
     }
 }

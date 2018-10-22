@@ -6,6 +6,8 @@ public class InventoryObjects : MonoBehaviour {
     public bool isRemote;
     public bool isKey;
     public bool isBatteries;
+    public bool isMayo;
+    public bool isHotSauce;
     public InventoryScript inventory;
 
     // Use this for initialization
@@ -29,6 +31,15 @@ public class InventoryObjects : MonoBehaviour {
         }
         if (isBatteries) {
             globalVariables.active = new bool[] { false, false, false, false, true, false };
+            inventory.ToggleInventory();
+        }
+        if (isMayo)
+        {
+            globalVariables.active = new bool[] { false, true, false, false, false, false };
+            inventory.ToggleInventory();
+        }
+        if (isHotSauce) {
+            globalVariables.active = new bool[] { false, false, true, false, false, false };
             inventory.ToggleInventory();
         }
     }

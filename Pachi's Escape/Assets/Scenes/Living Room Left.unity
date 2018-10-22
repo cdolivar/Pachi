@@ -488,6 +488,8 @@ MonoBehaviour:
   isRemote: 1
   isKey: 0
   isBatteries: 0
+  isMayo: 0
+  isHotSauce: 0
   inventory: {fileID: 1188060837}
 --- !u!1 &283649269
 GameObject:
@@ -1526,6 +1528,8 @@ MonoBehaviour:
   isRemote: 0
   isKey: 0
   isBatteries: 1
+  isMayo: 0
+  isHotSauce: 0
   inventory: {fileID: 1188060837}
 --- !u!1 &947365398
 GameObject:
@@ -1617,6 +1621,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fire: {fileID: 802136253}
   batteriesInFire: {fileID: 1645162693}
+  hotSauceInFire: {fileID: 1154459741}
 --- !u!61 &947365402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1792,6 +1797,81 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1136760235}
   m_CullTransparentMesh: 0
+--- !u!1 &1154459741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1154459743}
+  - component: {fileID: 1154459742}
+  m_Layer: 0
+  m_Name: hotsauce in fire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1154459742
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154459741}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: fd34e766d55bc4ae69f2cdcb624c7fdb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.98, y: 1.66}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1154459743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154459741}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.485, y: -1.781, z: -1.69}
+  m_LocalScale: {x: 0.46310997, y: 0.46310997, z: 0.46310997}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1157119552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,6 +1882,7 @@ GameObject:
   - component: {fileID: 1157119553}
   - component: {fileID: 1157119555}
   - component: {fileID: 1157119554}
+  - component: {fileID: 1157119556}
   m_Layer: 5
   m_Name: hotsauce
   m_TagString: Untagged
@@ -1861,6 +1942,23 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1157119552}
   m_CullTransparentMesh: 0
+--- !u!114 &1157119556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1157119552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433f3ba1c625e4cf393312013d0fc22f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRemote: 0
+  isKey: 0
+  isBatteries: 0
+  isMayo: 0
+  isHotSauce: 1
+  inventory: {fileID: 1188060837}
 --- !u!1 &1173804317
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,6 +2167,7 @@ MonoBehaviour:
   inventoryButton: {fileID: 535267400}
   fire: {fileID: 802136253}
   batteriesInFire: {fileID: 1645162693}
+  hotSauceInFire: {fileID: 1154459741}
   remote: {fileID: 276907105}
   mayo: {fileID: 1404001653}
   hotSauce: {fileID: 1157119554}
@@ -2426,7 +2525,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1350607126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.78, y: -11.61, z: 0}
+  m_LocalPosition: {x: 23.78, y: -11.61, z: -0.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2560,6 +2659,8 @@ GameObject:
   - component: {fileID: 1404001652}
   - component: {fileID: 1404001654}
   - component: {fileID: 1404001653}
+  - component: {fileID: 1404001655}
+  - component: {fileID: 1404001656}
   m_Layer: 5
   m_Name: mayo
   m_TagString: Untagged
@@ -2619,6 +2720,48 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1404001651}
   m_CullTransparentMesh: 0
+--- !u!114 &1404001655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404001651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433f3ba1c625e4cf393312013d0fc22f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRemote: 0
+  isKey: 0
+  isBatteries: 0
+  isMayo: 1
+  isHotSauce: 0
+  inventory: {fileID: 1188060837}
+--- !u!61 &1404001656
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404001651}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 89.7, y: 61.47}
+  m_EdgeRadius: 0
 --- !u!1 &1438314515
 GameObject:
   m_ObjectHideFlags: 0
@@ -3044,6 +3187,8 @@ MonoBehaviour:
   isRemote: 0
   isKey: 1
   isBatteries: 0
+  isMayo: 0
+  isHotSauce: 0
   inventory: {fileID: 1188060837}
 --- !u!61 &1618078102
 BoxCollider2D:
