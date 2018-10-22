@@ -1,0 +1,2 @@
+/Users/admin/Documents/school/berkeley/classes/art178/pachi/Pachi's Escape/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
+/Users/admin/Documents/school/berkeley/classes/art178/pachi/Pachi's Escape/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache

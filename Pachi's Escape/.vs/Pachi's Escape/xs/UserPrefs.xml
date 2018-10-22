@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{274BBAB6-2DA1-0E50-E450-F4306FBD1D16}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/tv_script.cs">
+    <Files>
+      <File FileName="Assets/pillowScript.cs" Line="34" Column="6" />
+      <File FileName="Assets/globalVariables.cs" Line="9" Column="91" />
+      <File FileName="Assets/inventoryScript.cs" Line="29" Column="5" />
+      <File FileName="Assets/changeScenes.cs" Line="16" Column="49" />
+      <File FileName="Assets/buttonScript.cs" Line="21" Column="53" />
+      <File FileName="Assets/inventoryObjects.cs" Line="21" Column="37" />
+      <File FileName="Assets/tv_script.cs" Line="34" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

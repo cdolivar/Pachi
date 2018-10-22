@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/Living Room Left.unity
+  isLoaded: 1
+  isActive: 1
