@@ -61,13 +61,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\buttonScript.cs" />
-    <Compile Include="Assets\changeScenes.cs" />
-    <Compile Include="Assets\globalVariables.cs" />
-    <Compile Include="Assets\InventoryObjects.cs" />
-    <Compile Include="Assets\InventoryScript.cs" />
-    <Compile Include="Assets\pillowScript.cs" />
-    <Compile Include="Assets\tv_script.cs" />
+    <Compile Include="Assets\Scripts\buttonScript.cs" />
+    <Compile Include="Assets\Scripts\changeScenes.cs" />
+    <Compile Include="Assets\Scripts\globalVariables.cs" />
+    <Compile Include="Assets\Scripts\InventoryObjects.cs" />
+    <Compile Include="Assets\Scripts\InventoryScript.cs" />
+    <Compile Include="Assets\Scripts\jumpingScript.cs" />
+    <Compile Include="Assets\Scripts\objectsScript.cs" />
+    <Compile Include="Assets\Scripts\tv_script.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/admin/Documents/school/berkeley/classes/art178/pachi/Pachi's Escape/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
