@@ -24,7 +24,6 @@ public class changeScenes : MonoBehaviour {
     }
     public void JumpToDrawer()
     {
-        Debug.Log("neither");
         camera.Translate(new Vector3(28, -11, 0));
     }
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class InventoryObjects : MonoBehaviour {
     public bool isRemote;
     public bool isKey;
+    public bool isBatteries;
     public InventoryScript inventory;
 
     // Use this for initialization
@@ -18,7 +19,17 @@ public class InventoryObjects : MonoBehaviour {
 	}
 
     void OnMouseDown() {
-        globalVariables.active = new bool[] { true, false, false, false, false, false };
-        inventory.ToggleInventory();
+        if (isRemote) {
+            globalVariables.active = new bool[] { true, false, false, false, false, false };
+            inventory.ToggleInventory();
+        }
+        if (isKey) {
+            globalVariables.active = new bool[] { false, false, false, true, false, false };
+            inventory.ToggleInventory();
+        }
+        if (isBatteries) {
+            globalVariables.active = new bool[] { false, false, false, false, true, false };
+            inventory.ToggleInventory();
+        }
     }
 }

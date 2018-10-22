@@ -10,6 +10,8 @@ public class objectsScript : MonoBehaviour {
     public bool isRemote = false;
     public bool isBatteries = false;
     public bool isKey = false;
+    public bool isMayo = false;
+    public bool isHotSauce = false;
 
     // Use this for initialization
     void Start () {
@@ -44,6 +46,14 @@ public class objectsScript : MonoBehaviour {
         else if (isKey) {
             Destroy(gameObject);
             globalVariables.setTrue(3);
+        }
+        else if (isMayo) {
+            Destroy(gameObject);
+            globalVariables.setTrue(1);
+        }
+        else if (isHotSauce) {
+            Destroy(gameObject);
+            globalVariables.setTrue(2);
         }
     }
 

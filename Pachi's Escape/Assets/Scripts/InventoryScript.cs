@@ -7,6 +7,8 @@ using System.Collections.Generic;
 public class InventoryScript : MonoBehaviour {
     public Image inventoryBox;
     public Button inventoryButton;
+    public GameObject fire;
+    public GameObject batteriesInFire;
     private bool inventoryShowing;
 
     private Image[] items;
@@ -19,6 +21,8 @@ public class InventoryScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         inventoryShowing = false;
+        fire.GetComponent<Renderer>().enabled = false;
+        batteriesInFire.GetComponent<Renderer>().enabled = false;
         HideInventoryBox();
     }
 	
