@@ -6,6 +6,7 @@ public class fireplace : MonoBehaviour {
     public GameObject fire;
     public GameObject batteriesInFire;
     public GameObject hotSauceInFire;
+    public GameObject mayonaiseInFire;
 
 	// Use this for initialization
 	void Start () {
@@ -33,6 +34,12 @@ public class fireplace : MonoBehaviour {
             hotSauceInFire.GetComponent<Renderer>().enabled = true;
             globalVariables.active = new bool[] { false, false, false, false, false, false };
             globalVariables.inventory[2] = false;
+        }
+        if (globalVariables.active[1])
+        {
+            mayonaiseInFire.GetComponent<Renderer>().enabled = true;
+            globalVariables.active = new bool[] { false, false, false, false, false, false };
+            globalVariables.inventory[1] = false;
         }
     }
 }

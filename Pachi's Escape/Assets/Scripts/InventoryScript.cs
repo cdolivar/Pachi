@@ -10,6 +10,7 @@ public class InventoryScript : MonoBehaviour {
     public GameObject fire;
     public GameObject batteriesInFire;
     public GameObject hotSauceInFire;
+    public GameObject mayonaiseInFire;
     private bool inventoryShowing;
 
     private Image[] items;
@@ -25,6 +26,7 @@ public class InventoryScript : MonoBehaviour {
         fire.GetComponent<Renderer>().enabled = false;
         batteriesInFire.GetComponent<Renderer>().enabled = false;
         hotSauceInFire.GetComponent<Renderer>().enabled = false;
+        mayonaiseInFire.GetComponent<Renderer>().enabled = false;
         HideInventoryBox();
     }
 	
