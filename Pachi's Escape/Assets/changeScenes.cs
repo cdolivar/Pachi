@@ -22,6 +22,11 @@ public class changeScenes : MonoBehaviour {
             PanLeft();
         }
     }
+    public void JumpToDrawer()
+    {
+        camera.Translate(new Vector3(28, -11, 0));
+    }
+
 
     public void PanLeft()
     {
@@ -32,4 +37,6 @@ public class changeScenes : MonoBehaviour {
     {
         camera.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
     }
+
+
 }
