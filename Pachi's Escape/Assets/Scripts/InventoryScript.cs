@@ -11,6 +11,9 @@ public class InventoryScript : MonoBehaviour {
     public GameObject batteriesInFire;
     public GameObject hotSauceInFire;
     public GameObject mayonaiseInFire;
+    public GameObject explosion;
+    public GameObject hole;
+    public AudioClip clickAudio;
     private bool inventoryShowing;
 
     private Image[] items;
@@ -19,14 +22,29 @@ public class InventoryScript : MonoBehaviour {
     public Image hotSauce;
     public Image fireKey;
     public Image batteries;
+    // sound 
+    private AudioSource source;
+
+    private void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
     // Use this for initialization
     void Start () {
         inventoryShowing = false;
-        fire.GetComponent<Renderer>().enabled = false;
-        batteriesInFire.GetComponent<Renderer>().enabled = false;
-        hotSauceInFire.GetComponent<Renderer>().enabled = false;
-        mayonaiseInFire.GetComponent<Renderer>().enabled = false;
+        //fire.GetComponent<Renderer>().enabled = false;
+        fire.SetActive(false);
+        //batteriesInFire.GetComponent<Renderer>().enabled = false;
+        batteriesInFire.SetActive(false);
+        //hotSauceInFire.GetComponent<Renderer>().enabled = false;
+        hotSauceInFire.SetActive(false);
+        //mayonaiseInFire.GetComponent<Renderer>().enabled = false;
+        mayonaiseInFire.SetActive(false);
+        //explosion.GetComponent<Renderer>().enabled = false;
+        explosion.SetActive(false);
+        //hole.GetComponent<Renderer>().enabled = false;
+        hole.SetActive(false);
         HideInventoryBox();
     }
 	
@@ -36,6 +54,7 @@ public class InventoryScript : MonoBehaviour {
 	}
 
     public void ToggleInventory() {
+        source.PlayOneShot(clickAudio, 1.0f);
         if (inventoryShowing) {
             HideInventoryBox();
             inventoryShowing = false;
@@ -54,6 +73,7 @@ public class InventoryScript : MonoBehaviour {
             if (globalVariables.inventory[i]){
                 items[i].gameObject.SetActive(true);
             }
+            //items[i].gameObject.SetActive(true); // sets all invetory to true
         }
     }
 
