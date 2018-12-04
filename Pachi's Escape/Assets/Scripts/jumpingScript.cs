@@ -7,11 +7,18 @@ public class jumpingScript : MonoBehaviour {
     public bool fromKitchenToDrawer = false;
     public bool ToKitchen = false;
     public bool fromKitchenToFridge = false;
+    public SpriteRenderer spriteRenderer;
+
+    // sound stuff
+    private AudioSource source;
+    float vol = 1.0f;
+    public AudioClip sound;
 
 
     // Use this for initialization
     void Start () {
-		
+        source = GetComponent<AudioSource>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -19,7 +26,20 @@ public class jumpingScript : MonoBehaviour {
 		
 	}
 
+    void OnMouseOver()
+    {
+        spriteRenderer.color = Color.yellow;
+    }
+
+    private void OnMouseExit()
+    {
+        spriteRenderer.color = Color.white;
+    }
+
+
+
     void OnMouseDown() {
+        source.PlayOneShot(sound, vol);
         // Jump to drawer 
         if (fromKitchenToDrawer)
         {

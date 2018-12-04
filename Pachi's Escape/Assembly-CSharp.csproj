@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\background_audio.cs" />
     <Compile Include="Assets\Scripts\buttonScript.cs" />
     <Compile Include="Assets\Scripts\changeScenes.cs" />
     <Compile Include="Assets\Scripts\fireplace.cs" />
