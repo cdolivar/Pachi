@@ -6,10 +6,12 @@ public class buttonScript : MonoBehaviour {
     public Transform camera;
     public int speed;
     public bool leftButton;
+    public AudioClip walkingSound;
+    private AudioSource audioSource;
 
     // Use this for initialization
     void Start () {
-		
+        audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -18,6 +20,7 @@ public class buttonScript : MonoBehaviour {
 	}
 
     void OnMouseOver() {
+        Debug.Log("hovering over!!!");
         if (globalVariables.canPan){
             if (camera.gameObject.transform.position.x > 0 && leftButton)
             {
@@ -28,5 +31,9 @@ public class buttonScript : MonoBehaviour {
                 camera.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
             }
         }
+
+
+
     }
+
 }

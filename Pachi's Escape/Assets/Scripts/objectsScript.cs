@@ -70,7 +70,6 @@ public class objectsScript : MonoBehaviour {
 // change sprite on click
 void OnMouseDown()
     {
-        Debug.Log("clicked!");
         // don't do anything after being touched once
         if (hasBeenTouched & !isReusable) {
             return;
