@@ -23,7 +23,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 541
+  controlID: 4835
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 542
+  controlID: 4836
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 543
+  controlID: 4837
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 982d0000
-    m_LastClickedID: 11672
+    m_SelectedIDs: 
+    m_LastClickedID: 0
     m_ExpandedIDs: 5afbffff000000006a2e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -287,9 +287,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 24.511879, y: -0.57238454, z: -0.08625989}
+    m_Target: {x: 4.6479716, y: 0.39675337, z: -0.1178102}
     speed: 2
-    m_Value: {x: 24.511879, y: -0.57238454, z: -0.08625989}
+    m_Value: {x: 4.6479716, y: 0.39675337, z: -0.1178102}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -321,15 +321,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.351462
+    m_Target: 12.478328
     speed: 2
-    m_Value: 9.351462
+    m_Value: 12.478328
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.09824823, y: -0.37307265, z: -0.03976639, w: 0.92172813}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -423,11 +423,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/audio
+    - Assets/Sprites/Living Room
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/audio
+  - Assets/Sprites/Living Room
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/admin/Documents/school/berkeley/classes/art178/pachi/Pachi's
     Escape
@@ -435,8 +435,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d0350000
-    m_LastClickedID: 13776
+    m_SelectedIDs: c22c0000
+    m_LastClickedID: 11458
     m_ExpandedIDs: 00000000502a00005a2b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 18310000
     m_LastClickedID: 12568
-    m_ExpandedIDs: 00000000502a00005a2b0000
+    m_ExpandedIDs: 00000000502a00005a2b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -490,10 +490,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 982d0000
-    m_LastClickedInstanceID: 11672
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000
+    m_ExpandedInstanceIDs: c6230000843d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
